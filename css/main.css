@@ -87,6 +87,67 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   body{
+     background-color: #2A4163;
+   }
+
+  .container_stripes{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100%;
+    flex-direction: row;
+    z-index: -5;
+}
+   .stripe_blue{
+    width: 12%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+     background-color: #237afa;
+   }
+
+   .stripe_aqua{
+    width: 12%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+     background-color: #10DDCC;
+   }
+
+   .stripe_orange{
+    width: 12%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+     background-color: #f77660;
+   }
+
+   .stripe_yellow{
+    width: 12%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+     background-color: #F9E68B;
+   }
+
+   .banner{
+     background-image: url('../img/imaginedragons_homehero.webp');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 840px;
+
+   }
+
 
 
 
