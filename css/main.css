@@ -117,15 +117,21 @@ nav ul li a:hover{
 }
 
 #container_logo_background{
+  line-height: 145px;
   height: 145px;
   width: 100%;
   background: #2a4163;
   margin: 5%;
   text-align: center;
+  display: block;
+}
+#logo{
+  vertical-align: middle;
 }
 
-.logo img{
-margin: 1%;
+.about_bandinfo_panel p{
+  background-color: #2a4163;
+  color: #ffffff;
 }
 
 /* Got rid of the div stripes and made it an SVG background image */
