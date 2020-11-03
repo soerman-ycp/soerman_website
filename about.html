@@ -17,6 +17,14 @@
 
 <body>
 
+  <!-- Off Canvas Navigation -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="tour.html">Tour</a>
+  </div>
+
   <header id="aboutbg">
     <nav>
       <ul>
@@ -24,6 +32,7 @@
         <li><a href="about.html" class="about">About</a></li>
         <li><a href="tour.html" class="tour">Tour</a></li>
       </ul>
+      <span class="hamburger" onclick="openNav()">&#9776;</span>
     </nav>
   </header>
 
@@ -43,32 +52,57 @@
       <img src="img/about_large_band.png">
     </div>
 
+    <!-- Reorganized so .about_bandinfo_panel is the outermost container...then two other divs created housing just the images and just the text to style them...see main.css to see how .about_bandinfo_panel is further styled.-->
     <div class="about_bandinfo_panel">
-      <img src="img/about_bandinfo_1.jpg"><br>
+    <div class="about_bandinfo_imgbox">
+      <img src="img/about_bandinfo_1.jpg">
+      <img src="img/about_bandinfo_2.jpg">
+      <img src="img/about_bandinfo_3.png">
+      <img src="img/about_bandinfo_4.jpg">
+    </div>
+    <div class="about_bandinfo_textbox">
         <p> After releasing their 2012 full-length debut Night Visions (featuring the Grammy Award-winning single “Radioactive”), Imagine Dragons spent nearly two years bringing their passionately inventive brand of alt-rock to arenas around the world. To deal with the chaos of a touring schedule that included 130 headline dates and 50 festivals across the globe, the Las Vegas-based quartet threw themselves into creating material for their next album. “So many things were changing for us so quickly, the only way to feel some kind of stability was to keep writing,” says frontman Dan Reynolds, who founded Imagine Dragons with guitarist Wayne Sermon, bassist Ben McKee, and drummer Daniel Platzman. “Going up to my hotel room to work on new songs became something I looked forward to every night on tour,” Reynolds adds. “There were definitely a few times when the person next door’s banging on the wall because it’s 4 a.m. and they’re trying to sleep and I’m in there belting out some song I just wrote.”
-      </p>
-      <img src="img/about_bandinfo_2.jpg"><br>
-        <p> Despite the whirlwind of the past few years, the drive to create sonically adventurous but unabashedly honest music has remained a constant for Imagine Dragons. And for Reynolds—who recalls sneaking onto his older brother’s computer at age 13 to use the recording software and sketch out songs about his early-adolescent heartache and frustrations—Smoke + Mirrors has proven his most daringly candid experience in songwriting yet. “At times it’s really scary to think about so many people hearing what I’m talking about in the lyrics on this album, but I know that for better for worse it’s completely authentic and genuine and true to who we are as a band,” says Reynolds. “And that’s the most important thing you can ever do as an artist, and also the most magical: forget about everyone and everything else for the moment, and just create whatever’s most meaningful to you.”
-        </p>
-        <p> In each sprawling and hook-laced song on Smoke + Mirrors—including the brooding but anthemic lead single “Bet My Life” and the soulful, tribal-drumbeat-powered title track—Imagine Dragons reveal the pain and exhilaration that comes with soul-searching and transcendence. “One of the goals in making this album was to capture the extremes of the past couple years,” says Reynolds. “There were times on the road where I was on the highest high, like after playing in Brazil in front of 80,000 people, and there were other times when I was really feeling how difficult and lonely it was to be away from my family for so long.” To lay that emotion bare, Imagine Dragons stripped away some studio flourishes and embraced a sense of brilliant imperfection in producing Smoke + Mirrors. “A lot of the vocals on the album were ones that I recorded into my laptop or a cheap USB mike in my hotel room, because those were the takes that really had the spirit of the moment when the song was written,” Reynolds points out. At the same time, Imagine Dragons expanded their sound by using instruments collected in their travels, adding even more texture and depth to the band’s already-intricate rhythms and melodies.
-        </p>
-      <img src="img/about_bandinfo_3.png"><br>
-        <p> Live performance has always been essential to Imagine Dragons, who formed in 2009 and quickly earned a grassroots following by touring extensively and independently releasing a series of EPs. After signing to KIDinaKORNER/Interscope Records, the band made their major-label debut with the release of Continued Silence (a 2012 EP featuring the breakthrough single “It’s Time”). Once Night Visions arrived later that same year, Imagine Dragons soon found themselves on a skyward trajectory that saw the album climbing to #2 on the Billboard 200 chart, as well as the group taking home the Best Rock Performance for “Radioactive” at the 2014 Grammy Awards.
-        </p>
-      <img src="img/about_bandinfo_4.jpg"><br>
-        <p>
+      <br/>
+      <br/>
+          Despite the whirlwind of the past few years, the drive to create sonically adventurous but unabashedly honest music has remained a constant for Imagine Dragons. And for Reynolds—who recalls sneaking onto his older brother’s computer at age 13 to use the recording software and sketch out songs about his early-adolescent heartache and frustrations—Smoke + Mirrors has proven his most daringly candid experience in songwriting yet. “At times it’s really scary to think about so many people hearing what I’m talking about in the lyrics on this album, but I know that for better for worse it’s completely authentic and genuine and true to who we are as a band,” says Reynolds. “And that’s the most important thing you can ever do as an artist, and also the most magical: forget about everyone and everything else for the moment, and just create whatever’s most meaningful to you.”
+        <br/>
+        <br/>
+          In each sprawling and hook-laced song on Smoke + Mirrors—including the brooding but anthemic lead single “Bet My Life” and the soulful, tribal-drumbeat-powered title track—Imagine Dragons reveal the pain and exhilaration that comes with soul-searching and transcendence. “One of the goals in making this album was to capture the extremes of the past couple years,” says Reynolds. “There were times on the road where I was on the highest high, like after playing in Brazil in front of 80,000 people, and there were other times when I was really feeling how difficult and lonely it was to be away from my family for so long.” To lay that emotion bare, Imagine Dragons stripped away some studio flourishes and embraced a sense of brilliant imperfection in producing Smoke + Mirrors. “A lot of the vocals on the album were ones that I recorded into my laptop or a cheap USB mike in my hotel room, because those were the takes that really had the spirit of the moment when the song was written,” Reynolds points out. At the same time, Imagine Dragons expanded their sound by using instruments collected in their travels, adding even more texture and depth to the band’s already-intricate rhythms and melodies.
+        <br/>
+        <br/>
+          Live performance has always been essential to Imagine Dragons, who formed in 2009 and quickly earned a grassroots following by touring extensively and independently releasing a series of EPs. After signing to KIDinaKORNER/Interscope Records, the band made their major-label debut with the release of Continued Silence (a 2012 EP featuring the breakthrough single “It’s Time”). Once Night Visions arrived later that same year, Imagine Dragons soon found themselves on a skyward trajectory that saw the album climbing to #2 on the Billboard 200 chart, as well as the group taking home the Best Rock Performance for “Radioactive” at the 2014 Grammy Awards.
+        <br/>
+        <br/>
         Despite the whirlwind of the past few years, the drive to create sonically adventurous but unabashedly honest music has remained a constant for Imagine Dragons. And for Reynolds—who recalls sneaking onto his older brother’s computer at age 13 to use the recording software and sketch out songs about his early-adolescent heartache and frustrations—Smoke + Mirrors has proven his most daringly candid experience in songwriting yet. “At times it’s really scary to think about so many people hearing what I’m talking about in the lyrics on this album, but I know that for better for worse it’s completely authentic and genuine and true to who we are as a band,” says Reynolds. “And that’s the most important thing you can ever do as an artist, and also the most magical: forget about everyone and everything else for the moment, and just create whatever’s most meaningful to you.”
         </p>
+      </div>
     </div>
+
+<!-- I think we can simplify your page here with more reusable code. This block here uses reusable class names instead of unique ones. Looking at your design, you have a left colum of content and right column of content...if you use the outer most box (gridbox) to container everything and set the display, then left_gridbox and right_gridbox can have their own display of content inside of it. thus you can make this reusable for all of your sections. We'll go over in class. -->
+
+<!-- 
+  <div class="gridbox">
+    <div class="left_gridbox">
+      <p></p>
+      <img src="">
+    </div>
+
+    <div class="right_gridbox">
+      <img src="">
+      <img src="">
+    </div>
+  </div>
+  -->
 
   <!-- Sections for each member's about info -->
   <div class="about_DRinfo_panel">
-    <p>Dan Reynolds</p><p>Lead Vocalist</p><br>
-    <p>Hometown: Las Vegas, NV</p><br>
+    <p>Dan Reynolds</p><p>Lead Vocalist</p>
+    <p>Hometown: Las Vegas, NV</p>
     <p>Daniel Coulter Reynolds is an American singer, songwriter, and record producer.</p>
-    <img src="img/about_DRinfo_1.jpg"><br>
-    <img src="img/about_DRinfo_2.jpg"><br>
-    <img src="img/about_DRinfo_3.jpg"><br>
+    <img src="img/about_DRinfo_1.jpg">
+    <img src="img/about_DRinfo_2.jpg">
+    <img src="img/about_DRinfo_3.jpg">
+    </div>
 
   <div class="about_WSinfo_panel">
     <p>Wayne Sermon</p><p>Guitar</p><br>
@@ -77,23 +111,26 @@
     <img src="img/about_WSinfo_1.jpg"><br>
     <img src="img/about_WSinfo_2.jpg"><br>
     <img src="img/about_WSinfo_3.jpg"><br>
+  </div>
 
 
   <div class="about_DPinfo_panel">
-    <p>Daniel Platzman</p><p>Percussion</p><br>
-    <p>Hometown: Atlanta, GA</p><br>
+    <p>Daniel Platzman</p><p>Percussion</p>
+    <p>Hometown: Atlanta, GA</p>
     <p>Daniel James Platzman is an American musician, songwriter, record producer, composer, and film scorer.</p>
-    <img src="img/about_DPinfo_1.jpg"><br>
-    <img src="img/about_DPinfo_2.jpg"><br>
-    <img src="img/about_DPinfo_3.jpg"><br>
+    <img src="img/about_DPinfo_1.jpg">
+    <img src="img/about_DPinfo_2.jpg">
+    <img src="img/about_DPinfo_3.jpg">
+  </div>
 
   <div class="about_BMinfo_panel">
-    <p>Ben McKee</p><p>Bass</p><br>
-    <p>Hometown: Forestville, CA</p><br>
+    <p>Ben McKee</p><p>Bass</p>
+    <p>Hometown: Forestville, CA</p>
     <p>need to add his description and check Wayne's</p>
-    <img src="img/about_BMinfo_1.jpg"><br>
-    <img src="img/about_BMinfo_2.jpg"><br>
-    <img src="img/about_BMinfo_3.jpg"><br>
+    <img src="img/about_BMinfo_1.jpg">
+    <img src="img/about_BMinfo_2.jpg">
+    <img src="img/about_BMinfo_3.jpg">
+    </div>
   </section>
 
   <!-- Footer -->

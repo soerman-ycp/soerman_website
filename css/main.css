@@ -147,6 +147,29 @@ nav ul li a:hover{
   margin: none;
 }
 
+/* Gridbox reusable code - We'll discuss this in class
+
+.gridbox{
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.right_gridbox,
+.left_gridbox{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+*/
+
 /* Panel Section */
 
 .home_main_panel{
@@ -188,21 +211,36 @@ nav ul li a:hover{
   padding: 50px;
 }
 
+/* setting up the othermost box to flex and reorganize inner divs */
 .about_bandinfo_panel{
-  text-align: left;
-  width: 100%;
-  margin-left: 15%;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
+
+/* this says that the images in this section should be 100% of the container they live in */
 .about_bandinfo_panel img{
-  width: 41.125%;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  width: 80%;
+  margin: 15px 0px;
 }
+
+/* This says the two inner divs should have their content in a column, flexing, and set to 50% of the outermost container */
+.about_bandinfo_imgbox,
+.about_bandinfo_textbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0;
+}
+
+/* This says make that big paragraph take up 95% of its container width */
 .about_bandinfo_panel p{
   background-color: #2a4163;
   color: #ffffff;
   padding: 10px;
-  width: 60%;
+  width: 95%;
 }
 
 .about_DRinfo_panel{
@@ -315,6 +353,58 @@ input[type=submit]{
 }
 input[type=checkbox]{
   color: #f9e68b;
+}
+
+/* Off Canvas Navigation */
+
+.hamburger{
+  font-size:30px;
+  cursor:pointer;
+  color: #fff;
+  display: inline;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 
