@@ -78,60 +78,68 @@
       </div>
     </div>
 
-<!-- I think we can simplify your page here with more reusable code. This block here uses reusable class names instead of unique ones. Looking at your design, you have a left colum of content and right column of content...if you use the outer most box (gridbox) to container everything and set the display, then left_gridbox and right_gridbox can have their own display of content inside of it. thus you can make this reusable for all of your sections. We'll go over in class. -->
-
-<!-- 
-  <div class="gridbox">
-    <div class="left_gridbox">
-      <p></p>
-      <img src="">
-    </div>
-
-    <div class="right_gridbox">
-      <img src="">
-      <img src="">
-    </div>
-  </div>
-  -->
-
   <!-- Sections for each member's about info -->
-  <div class="about_DRinfo_panel">
-    <p>Dan Reynolds</p><p>Lead Vocalist</p>
-    <p>Hometown: Las Vegas, NV</p>
-    <p>Daniel Coulter Reynolds is an American singer, songwriter, and record producer.</p>
-    <img src="img/about_DRinfo_1.jpg">
-    <img src="img/about_DRinfo_2.jpg">
-    <img src="img/about_DRinfo_3.jpg">
-    </div>
 
-  <div class="about_WSinfo_panel">
-    <p>Wayne Sermon</p><p>Guitar</p><br>
-    <p>Hometown: American Fork, UT</p><br>
-    <p>Daniel Wayne Sermon is an American musician, songwriter, and record producer.</p>
-    <img src="img/about_WSinfo_1.jpg"><br>
-    <img src="img/about_WSinfo_2.jpg"><br>
-    <img src="img/about_WSinfo_3.jpg"><br>
+  <div class="about_bandinfo_panel">
+
+    <!-- Dan Reynolds -->
+    <div class="about_bandinfo_textbox">
+      <p>Dan ReynoldsLead Vocalist Hometown: Las Vegas, NV Daniel Coulter Reynolds is an American singer, songwriter, and record producer.</p>
+      <img src="img/about_DRinfo_2.jpg">
+    </div>
+    
+    <div class="about_bandinfo_imgbox">
+      <img src="img/about_DRinfo_1.jpg">
+      <img src="img/about_DRinfo_3.jpg">
+    </div>
   </div>
 
+  <!-- Wayne Sermon -->
+  <div class="about_bandinfo_panel">
 
-  <div class="about_DPinfo_panel">
-    <p>Daniel Platzman</p><p>Percussion</p>
-    <p>Hometown: Atlanta, GA</p>
-    <p>Daniel James Platzman is an American musician, songwriter, record producer, composer, and film scorer.</p>
+    <div class="about_bandinfo_textbox">
+      <img src="img/about_WSinfo_2.jpg">
+      <img src="img/about_WSinfo_3.jpg">
+    </div>
+
+    <div class="about_bandinfo_imgbox">
+      <p>Wayne Sermon Guitar Hometown: American Fork, UT Daniel Wayne Sermon is an American musician, songwriter, and record producer.</p>
+    <img src="img/about_WSinfo_1.jpg">
+    </div>
+  </div>
+
+<!-- Daniel Platzman -->
+
+<div class="about_bandinfo_panel">
+
+  <div class="about_bandinfo_textbox">
+    <p>Daniel Platzman Percussion Hometown: Atlanta, GA Daniel James Platzman is an American musician, songwriter, record producer, composer, and film scorer.</p>
     <img src="img/about_DPinfo_1.jpg">
+  </div>
+
+  <div class="about_bandinfo_imgbox">
     <img src="img/about_DPinfo_2.jpg">
     <img src="img/about_DPinfo_3.jpg">
   </div>
+</div>
 
-  <div class="about_BMinfo_panel">
-    <p>Ben McKee</p><p>Bass</p>
-    <p>Hometown: Forestville, CA</p>
-    <p>need to add his description and check Wayne's</p>
-    <img src="img/about_BMinfo_1.jpg">
+<!-- Ben McKee -->
+
+<div class="about_bandinfo_panel">
+
+  <div class="about_bandinfo_textbox">
+    <p>Ben McKee Bass Hometown: Forestville, CA need to add his description and check Wayne's</p>
     <img src="img/about_BMinfo_2.jpg">
+  </div>
+
+  <div class="about_bandinfo_imgbox">
+    <img src="img/about_BMinfo_1.jpg">
     <img src="img/about_BMinfo_3.jpg">
-    </div>
-  </section>
+  </div>
+</div>
+
+
+</section>
 
   <!-- Footer -->
   <footer>

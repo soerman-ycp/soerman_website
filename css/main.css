@@ -202,6 +202,30 @@ nav ul li a:hover{
   margin: 1.3%;
 }
 
+.main_panel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tour_panel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#tourbackground{
+  background-image: url('../img/tourbg.jpg');
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  margin: 2% 0% 0% 0%;
+}
+
 
 .about_large_panel{
   text-align: center;
@@ -353,7 +377,7 @@ input[type=submit]{
 }
 input[type=checkbox]{
   color: #f9e68b;
-}
+}s
 
 /* Off Canvas Navigation */
 
@@ -361,7 +385,7 @@ input[type=checkbox]{
   font-size:30px;
   cursor:pointer;
   color: #fff;
-  display: inline;
+  display: none;
 }
 
 .sidenav {
