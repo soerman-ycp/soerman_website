@@ -84,7 +84,7 @@ header{
   background-position: center;
   background-repeat: no-repeat;
   height: 1030px;
-  width: 100%;
+  width: 100vw;
   margin: 0px;
 }
 
@@ -119,6 +119,9 @@ nav ul li a:hover{
   color: #f77660;
 }
 
+.current_page{
+  color: #F9E68B;
+}
 
 /* Imagine Dragons Logo and Logo Background */
 #container_logo_background{
@@ -222,21 +225,35 @@ nav ul li a:hover{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #2a4163;
 }
 .album_1_container:hover .overlay_album_1 {
-  opacity: 1;
+  opacity: .8;
 }
 .overlay_text {
   color: white;
   font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 15%;
+  left: 45%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+.overlay_songs_1{
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.overlay_songs_2{
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 25%;
+  left: 60%;
 }
 
 
@@ -262,10 +279,10 @@ nav ul li a:hover{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #2a4163;
 }
 .album_2_container:hover .overlay_album_2 {
-  opacity: 1;
+  opacity: .8;
 }
 
 /* Album 3 */
@@ -290,10 +307,10 @@ nav ul li a:hover{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #2a4163;
 }
 .album_3_container:hover .overlay_album_3 {
-  opacity: 1;
+  opacity: .8;
 }
 
 /* Album 4 */
@@ -318,10 +335,10 @@ nav ul li a:hover{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #2a4163;
 }
 .album_4_container:hover .overlay_album_4 {
-  opacity: 1;
+  opacity: .8;
 }
 
 
@@ -346,7 +363,7 @@ nav ul li a:hover{
 
 /* setting up the othermost box to flex and reorganize inner divs */
 .about_bandinfo_panel{
-  width: 80vw;
+  /* width: 80vw; */
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -354,27 +371,317 @@ nav ul li a:hover{
 
 /* this says that the images in this section should be 100% of the container they live in */
 .about_bandinfo_panel img{
-  width: 80%;
-  margin: 15px 0px;
+  width: 100%;
+  margin: 2% 0%;
+  height: 19.5%
+
 }
 
 /* This says the two inner divs should have their content in a column, flexing, and set to 50% of the outermost container */
-.about_bandinfo_imgbox,
-.about_bandinfo_textbox{
+.about_bandinfo_imgbox{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 50.4%;
   margin: 0;
+  padding-left: 5%;
+}
+.about_bandinfo_textbox{
+  flex-direction: column;
+  align-items: center;
+  width: 86.67%;
+  margin: 0;
+  padding-left: 0px;
 }
 
 /* This says make that big paragraph take up 95% of its container width */
 .about_bandinfo_panel p{
   background-color: #2a4163;
   color: #ffffff;
-  padding: 10px;
-  width: 95%;
+  font-size: 16px;
+  padding-right: 5%;
+  padding-top: 5%;
+  width: 84.6%;
+  padding-left: 5%;
+  padding-bottom: 5%;
 }
+
+.about_bandinfo_panel_Reynolds_parent {
+	padding-bottom:5%;
+	padding-top:5%;
+	overflow: auto;
+
+}
+
+.about_bandinfo_panel_Reynolds_left_parent {
+	 width: 48.6%;
+    text-align: center;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+	padding-top: 50px;
+    border: 0;
+	float:left;
+	height: 25%;
+}
+.about_bandinfo_panel_Reynolds_left_img {
+     width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.about_bandinfo_panel_Reynolds_left_img img {
+    width: 85%;
+	padding-left: 15%;
+}
+
+
+
+}
+.about_bandinfo_panel_Reynolds_left_text  {
+  width: 5%;
+}
+
+
+
+.about_bandinfo_panel_Reynolds_left_text p {
+   background-color: #2a4163;
+  color: #ffffff;
+  font-size: 16px;
+  padding-right: 5%;
+  padding-top: 5%;
+  width: 100%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+.about_bandinfo_panel_Reynolds_right_parent {
+	 width: 48.6%;
+    text-align: center;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+    border: 0;
+	float:right;
+	height: 25%;
+}
+.about_bandinfo_panel_Reynolds_right_img  {
+     width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.about_bandinfo_panel_Reynolds_right_img img {
+    width: 85%;
+	padding-right: 15%;
+	padding-bottom: 2%;
+}
+
+
+.about_bandinfo_panel_Sermon_parent {
+	padding-bottom:5%;
+	padding-top:5%;
+	overflow: auto;
+
+}
+
+.about_bandinfo_panel_Sermon_left_parent {
+	 width: 48.6%;
+    text-align: center;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+	padding-top: 50px;
+    border: 0;
+	float:left;
+	height: 25%;
+}
+.about_bandinfo_panel_Sermon_left_img {
+     width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.about_bandinfo_panel_Sermon_left_img img {
+   width: 85%;
+	padding-bottom: 2%;
+	padding-left: 15%;
+}
+.about_bandinfo_panel_Sermon_right_text  {
+ width: 80%;
+}
+
+
+
+.about_bandinfo_panel_Sermon_right_text p {
+   background-color: #2a4163;
+  color: #ffffff;
+  font-size: 16px;
+  padding-left: 5%;
+  padding-top: 5%;
+  width: 100%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.about_bandinfo_panel_Sermon_right_parent {
+	 width: 48.6%;
+    text-align: center;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+    border: 0;
+	float:right;
+	height: 25%;
+}
+
+.about_bandinfo_panel_Reynolds_right_img {
+     width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.about_bandinfo_panel_Reynolds_right_img img {
+    width: 85%;
+}
+
+.about_bandinfo_panel_Platzman_parent {
+	padding-bottom:5%;
+	padding-top:5%;
+	overflow: auto;
+
+
+}
+
+.about_bandinfo_panel_Platzman_left_parent {
+	 width: 48.6%;
+    text-align: center;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+    border: 0;
+	float:left;
+	height: 25%;
+}
+.about_bandinfo_panel_Platzman_left_img {
+      width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.about_bandinfo_panel_Platzman_left_img img {
+   width: 85%;
+	padding-left: 15%;
+}
+.about_bandinfo_panel_Platzman_left_text  {
+  width: 5%;
+}
+
+
+
+.about_bandinfo_panel_Platzman_left_text p {
+   background-color: #2a4163;
+  color: #ffffff;
+  font-size: 16px;
+  padding-right: 5%;
+  padding-top: 5%;
+  width: 100%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+.about_bandinfo_panel_Platzman_right_parent {
+	 width: 48.6%;
+    text-align: center;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+    border: 0;
+	float:right;
+	height: 25%;
+}
+.about_bandinfo_panel_Platzman_right_img {
+     width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.about_bandinfo_panel_Platzman_right_img img {
+    width: 85%;
+	padding-right: 15%;
+	padding-bottom: 2%;
+}
+
+
+.about_bandinfo_panel_mckee_parent {
+	padding-bottom:5%;
+	padding-top:5%;
+	overflow: auto;
+
+}
+
+.about_bandinfo_panel_mckee_left_parent {
+	 width: 48.6%;
+    text-align: center;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+    border: 0;
+	float:left;
+	height: 25%;
+}
+.about_bandinfo_panel_mckee_left_img {
+      width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.about_bandinfo_panel_mckee_left_img img {
+   width: 85%;
+	padding-left: 15%;
+}
+
+
+.about_bandinfo_panel_mckee_left_text  {
+  width: 5%;
+}
+
+
+
+.about_bandinfo_panel_mckee_left_text p {
+   background-color: #2a4163;
+  color: #ffffff;
+  font-size: 16px;
+  padding-right: 5%;
+  padding-top: 5%;
+  width: 100%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+.about_bandinfo_panel_mckee_right_parent {
+	 width: 48.6%;
+    text-align: center;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+    border: 0;
+	float:right;
+	height: 25%;
+}
+.about_bandinfo_panel_mckee_right_img {
+     width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.about_bandinfo_panel_mckee_right_img img {
+   width: 85%;
+	padding-right: 15%;
+	padding-bottom: 2%;
+}
+
+
+
+
 
 .about_DRinfo_panel{
   text-align: left;
@@ -438,12 +745,26 @@ nav ul li a:hover{
 
 
 /* Tour Section */
-
+.tour_header{
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
 .tour_panel{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+.tour_dates1{
+  float:left; width: 13%;
+  padding-right:5%;
+  text-align: left;
+}
+.tour_dates2{
+  float:right; width: 13%;
+  padding: 0;
+  text-align: left;
 }
 
 #tourbackground{
@@ -455,6 +776,15 @@ nav ul li a:hover{
   height: 800px;
   margin: 2% 0% 0% 0%;
 }
+
+.month{
+  font-size: 20px;
+  color: #F9E68B;
+}
+.date{
+  font-size: 16px;
+  color: #ffffff;
+}
 /* ===== This is the CSS for the footer for every page === */
 footer p{
   margin: 0px;
@@ -462,7 +792,7 @@ footer p{
 }
 .footer_background{
   width:100%;
-  height: 250px;
+  height: 200px;
   background: #1c2c45;
 }
 .copyright{
