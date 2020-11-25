@@ -398,7 +398,7 @@ nav ul li a:hover{
 .about_bandinfo_panel p{
   background-color: #2a4163;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.061vw;
   padding-right: 5%;
   padding-top: 5%;
   width: 84.6%;
@@ -419,7 +419,7 @@ nav ul li a:hover{
     /* float: left; */
     margin: 0;
     padding: 0;
-	padding-top: 50px;
+    margin-top: 4%;
     border: 0;
 	float:left;
 	height: 25%;
@@ -532,6 +532,7 @@ nav ul li a:hover{
     border: 0;
 	float:right;
 	height: 25%;
+  margin-top:11%
 }
 
 .about_bandinfo_panel_Reynolds_right_img {
@@ -681,9 +682,9 @@ nav ul li a:hover{
 
 /* Slideshow */
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 img {
   vertical-align: middle;
@@ -849,16 +850,51 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 6%;
 }
 .tour_dates1{
-  float:left; width: 13%;
+  float:left;
+  width: 20%;
   padding-right:5%;
   text-align: left;
+  margin-left:34%
 }
 .tour_dates2{
-  float:right; width: 13%;
+  float:right;
+  width: 20%;
   padding: 0;
   text-align: left;
+  margin-right:27.5%
+}
+
+.mySlides{
+  text-align: center;
+}
+
+.caption_container{
+  margin: auto;
+  width: 55%;
+  height: 6%;
+  background-color: #2A4163;
+}
+
+.caption_container p{
+  margin: 0;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.prev{
+  margin-left:20%;
+  margin-top:2%;
+  color: #f77660;
+}
+
+.next{
+  margin-right:20%;
+  color: #f77660;
+  margin-top:2%;
 }
 
 #tourbackground{
