@@ -18,6 +18,11 @@ html {
   background: #b3d4fc;
   text-shadow: none;
 }
+
+::hover {
+  background: #b3d4fc;
+  text-shadow: none;
+}
 /* * A better looking default horizontal rule */
 hr {
   display: block;
@@ -63,7 +68,7 @@ header{
   background-position: center;
   background-repeat: no-repeat;
   height: 1030px;
-  width: 100vw;
+  width: 100%;
   margin: 0px;
 }
 
@@ -83,7 +88,7 @@ header{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 1030px;
+  height: 55vw;
   width: 100vw;
   margin: 0px;
 }
@@ -95,6 +100,7 @@ nav{
   margin: 0px;
   position: relative;
   right: 30%;
+  padding-left: 5%;
 }
 nav ul{
   display: flex;
@@ -125,8 +131,8 @@ nav ul li a:hover{
 
 /* Imagine Dragons Logo and Logo Background */
 #container_logo_background{
-  line-height: 145px;
-  height: 145px;
+  line-height: 12vw;
+  height: 12vw;
   width: 100%;
   background: #2a4163;
   margin: 5%;
@@ -135,6 +141,11 @@ nav ul li a:hover{
 }
 #logo{
   vertical-align: middle;
+}
+
+#logo img{
+  vertical-align: middle;
+  width: 100%
 }
 
 
@@ -369,10 +380,14 @@ nav ul li a:hover{
   flex-direction: row;
 }
 
+.about_main_panel_phone{
+  display:none;
+}
+
 /* this says that the images in this section should be 100% of the container they live in */
 .about_bandinfo_panel img{
   width: 100%;
-  margin: 2% 0%;
+  padding-bottom: 2vw;
   height: 19.5%
 
 }
@@ -387,16 +402,17 @@ nav ul li a:hover{
   padding-left: 5%;
 }
 .about_bandinfo_textbox{
+  background-color: #2a4163;
   flex-direction: column;
   align-items: center;
   width: 86.67%;
   margin: 0;
   padding-left: 0px;
+  height: 88.1vw;
 }
 
 /* This says make that big paragraph take up 95% of its container width */
 .about_bandinfo_panel p{
-  background-color: #2a4163;
   color: #ffffff;
   font-size: 1.061vw;
   padding-right: 5%;
@@ -419,7 +435,7 @@ nav ul li a:hover{
     /* float: left; */
     margin: 0;
     padding: 0;
-    margin-top: 4%;
+    margin-top: 4vw;
     border: 0;
 	float:left;
 	height: 25%;
@@ -490,7 +506,6 @@ nav ul li a:hover{
     /* float: left; */
     margin: 0;
     padding: 0;
-	padding-top: 50px;
     border: 0;
 	float:left;
 	height: 25%;
@@ -532,7 +547,7 @@ nav ul li a:hover{
     border: 0;
 	float:right;
 	height: 25%;
-  margin-top:11%
+  margin-top:4vw;
 }
 
 .about_bandinfo_panel_Reynolds_right_img {
@@ -688,6 +703,7 @@ nav ul li a:hover{
 
 img {
   vertical-align: middle;
+  width: 55%;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -911,11 +927,17 @@ img {
   font-size: 20px;
   color: #F9E68B;
 }
+
+
 .date{
   font-size: 16px;
   color: #ffffff;
 }
 /* ===== This is the CSS for the footer for every page === */
+
+footer {
+  overflow-x:hidden;
+}
 footer p{
   margin: 0px;
   padding: 0px;
@@ -1036,7 +1058,593 @@ input[type=submit]{
 
 
 
+/* -------- Media Classes --------------*/
 
+/* ----------- Tablet ----------------*/
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)  {
+
+	  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    position: relative;
+    right: 30%;
+    padding-left: 15%;
+}
+.overlay_text {
+  color: white;
+  font-size: 11px;
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay_songs_1{
+  color: white;
+  font-size: 9px;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.overlay_songs_2{
+  color: white;
+  font-size: 9px;
+  position: absolute;
+  top: 25%;
+  left: 60%;
+}
+.about_bandinfo_panel p{
+  background-color: #2a4163;
+  color: #ffffff;
+  font-size: 1.11vw;
+  padding-right: 5%;
+  padding-top: 5%;
+  width: 84.6%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+#tourbg {
+    background-image: url(../img/tour_hero_image3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vw;
+    width: 100%;
+    margin: 0px;
+}
+
+#aboutbg {
+    background-image: url(../img/about_hero_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vw;
+    width: 100vw;
+    margin: 0px;
+}
+
+header{
+  background-image: url('../img/home_hero_image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vw;
+  width: 100%;
+  margin: 0px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 20pt;
+  color: #ffffff;
+  padding: 20px;
+}
+.email_form hr {
+    width: 49%;
+    position: relative;
+    left: 28%;
+    top: -5%;
+}
+
+.caption_container p {
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+img {
+  vertical-align: middle;
+  width: 75%;
+}
+
+.caption_container {
+    margin: auto;
+    width: 75%;
+    height: 6%;
+    background-color: #2A4163;
+}
+
+.prev {
+    margin-left: 10%;
+    margin-top: 1%;
+    color: #f77660;
+}
+
+.next {
+    margin-right: 10%;
+    color: #f77660;
+    margin-top: 1%;
+}
+
+.tour_dates1 {
+    float: left;
+    width: 100%;
+    padding-right: 0%;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.tour_dates2 {
+    float: right;
+     width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-right: 0%;
+}
+.month {
+    font-size: 14px;
+    color: #F9E68B;
+}
+.date {
+    font-size: 11px;
+    color: #ffffff;
+}
+#tourbackground {
+    background-image: url(../img/tourbg.jpg);
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: 2% 0% 0% 0%;
+}
+
+.overlay_album_1:hover {
+  -ms-transform: scale(2.3); /* IE 9 */
+  -webkit-transform: scale(2.3); /* Safari 3-8 */
+  transform: translate(33vw,0px) scale(2.3);
+  z-index: 3;
+}
+
+.album_1_container:hover .overlay_album_1 {
+  opacity: 1.0;
+}
+
+
+.overlay_album_2:hover {
+  -ms-transform: scale(2.3); /* IE 9 */
+  -webkit-transform: scale(2.3); /* Safari 3-8 */
+  transform: translate(11vw,0px) scale(2.3);
+  z-index: 3;
+}
+.album_2_container:hover .overlay_album_2 {
+  opacity: 1.0;
+}
+
+.overlay_album_3:hover {
+  -ms-transform: scale(2.3); /* IE 9 */
+  -webkit-transform: scale(2.3); /* Safari 3-8 */
+  transform: translate(-10vw,0px) scale(2.3);
+  z-index: 3;
+}
+.album_3_container:hover .overlay_album_3 {
+  opacity: 1.0;
+}
+
+.overlay_album_4:hover {
+  -ms-transform: scale(2.3); /* IE 9 */
+  -webkit-transform: scale(2.3); /* Safari 3-8 */
+  transform: translate(-33vw,0px) scale(2.3);
+  z-index: 3;
+}
+.album_4_container:hover .overlay_album_4 {
+  opacity: 1.0;
+}
+
+.overlay_text {
+  color: white;
+  font-size: 1.5vw;
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay_songs_1{
+  color: white;
+  font-size: 0.9vw;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.overlay_songs_2{
+  color: white;
+  font-size: 0.9vw;
+  position: absolute;
+  top: 25%;
+  left: 60%;
+}
+
+.about_bandinfo_panel {
+    /* width: 80vw; */
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about_main_panel_phone {
+  display:block;
+}
+
+.about_bandinfo_textbox {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-left: 8px;
+    height:100%;
+}
+
+.about_bandinfo_textbox p {
+  background-color: #2a4163;
+  color: #ffffff;
+  font-size: 3.1vw;
+  padding-right: 5%;
+  padding-top: 5%;
+  width: 84.6%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+.about_bandinfo_imgbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0;
+    padding-left: 5%;
+}
+
+.about_bandinfo_imgbox img {
+  vertical-align: middle;
+  width: 90%;
+  padding-right: 5vw;
+}
+  }
+  /*********** Phone **************/
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px) {
+		  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    position: relative;
+    right: 30%;
+    padding-left: 25%;
+}
+.overlay_text {
+  color: white;
+  font-size: 6px;
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay_songs_1{
+  color: white;
+  font-size: 4px;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.overlay_songs_2{
+  color: white;
+  font-size: 4px;
+  position: absolute;
+  top: 25%;
+  left: 60%;
+
+  }
+
+  .email_form hr {
+    width: 95%;
+    position: relative;
+    left: 2%;
+    top: -5%;
+}
+
+.month {
+    font-size: 16px;
+    color: #F9E68B;
+}
+.date {
+    font-size: 14px;
+    color: #ffffff;
+}
+header {
+    background-image: url(../img/home_hero_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 100vw;
+    /* margin: 0px; */
+    /* margin-left: 50vw;*/
+}
+
+	#container_logo_background {
+    line-height: 65px;
+    height: 65px;
+    width: 100%;
+    background: #2a4163;
+    margin: 5%;
+    text-align: center;
+    display: block;
+
+  }
+
+  .hamburger{
+  font-size:30px;
+  cursor:pointer;
+  color: #fff;
+  display: block;
+  padding-right: 65%
+}
+
+nav ul{
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+#tourbg {
+    background-image: url(../img/tour_hero_image3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vw;
+    width: 100%;
+    margin: 0px;
+}
+
+.caption_container p {
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+img {
+  vertical-align: middle;
+  width: 75%;
+}
+
+.caption_container {
+    margin: auto;
+    width: 75%;
+    height: 6%;
+    background-color: #2A4163;
+}
+
+.prev {
+    margin-left: 10%;
+    margin-top: 1%;
+    color: #f77660;
+}
+
+.next {
+    margin-right: 10%;
+    color: #f77660;
+    margin-top: 1%;
+}
+
+#pushme {
+    position: relative;
+    left: 85px;
+}
+.email_form {
+    text-align: center;
+    color: #f9e68b;
+    font-size: 11px;
+}
+.email_form hr {
+    width: 85%;
+    position: relative;
+    left: 10%;
+    top: -5%;
+}
+.get_updates {
+    color: #f77660;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 25px;
+}
+#aboutbg {
+    background-image: url(../img/about_hero_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vw;
+    width: 100vw;
+    margin: 0px;
+}
+
+.about_large_panel img {
+    width: 85%;
+    padding: 0;
+    padding-bottom: 5vw;
+  }
+
+
+
+.about_bandinfo_panel_Reynolds_left_text p {
+    background-color: #2a4163;
+    color: #ffffff;
+    font-size: 11px;
+    padding-right: 5%;
+    padding-top: 5%;
+    width: 100%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.about_bandinfo_panel_Sermon_right_text p {
+    background-color: #2a4163;
+    color: #ffffff;
+    font-size: 11px;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 100%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+
+.overlay_album_1:hover {
+  -ms-transform: scale(2.3); /* IE 9 */
+  -webkit-transform: scale(2.3); /* Safari 3-8 */
+  transform: translate(33vw,0px) scale(2.3);
+  z-index: 3;
+}
+
+.album_1_container:hover .overlay_album_1 {
+  opacity: 1.0;
+}
+
+
+.overlay_album_2:hover {
+  -ms-transform: scale(2.3); /* IE 9 */
+  -webkit-transform: scale(2.3); /* Safari 3-8 */
+  transform: translate(11vw,0px) scale(2.3);
+  z-index: 3;
+}
+.album_2_container:hover .overlay_album_2 {
+  opacity: 1.0;
+}
+
+.overlay_album_3:hover {
+  -ms-transform: scale(2.3); /* IE 9 */
+  -webkit-transform: scale(2.3); /* Safari 3-8 */
+  transform: translate(-10vw,0px) scale(2.3);
+  z-index: 3;
+}
+.album_3_container:hover .overlay_album_3 {
+  opacity: 1.0;
+}
+
+.overlay_album_4:hover {
+  -ms-transform: scale(2.3); /* IE 9 */
+  -webkit-transform: scale(2.3); /* Safari 3-8 */
+  transform: translate(-33vw,0px) scale(2.3);
+  z-index: 3;
+}
+.album_4_container:hover .overlay_album_4 {
+  opacity: 1.0;
+}
+#tourbackground {
+    background-image: url(../img/tourbg.jpg);
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: 2% 0% 0% 0%;
+}
+
+.tour_dates1 {
+    float: left;
+    width: 100%;
+    padding-right: 0%;
+    text-align: left;
+    margin-left: 6%;
+}
+
+.tour_dates2 {
+    float: right;
+     width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-right: 0%;
+}
+.month {
+    font-size: 14px;
+    color: #F9E68B;
+}
+.date {
+    font-size: 11px;
+    color: #ffffff;
+}
+.about_bandinfo_panel {
+    /* width: 80vw; */
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about_main_panel_phone {
+  display:block;
+}
+
+.about_bandinfo_textbox {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-left: 8px;
+}
+
+.about_bandinfo_textbox p {
+  background-color: #2a4163;
+  color: #ffffff;
+  font-size: 2.5vw;
+  padding-right: 5%;
+  padding-top: 5%;
+  width: 84.6%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+.about_bandinfo_imgbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0;
+    padding-left: 5%;
+}
+
+.about_bandinfo_imgbox img {
+  vertical-align: middle;
+  width: 90%;
+  padding-right: 5vw;
+}
 
 /* === Helper classes ====*/
 /* * Hide visually and from screen readers */
