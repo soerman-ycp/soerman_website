@@ -1020,7 +1020,7 @@ input[type=submit]{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #f77660;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -1030,7 +1030,7 @@ input[type=submit]{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #2a4163;
   display: block;
   transition: 0.3s;
 }
@@ -1308,7 +1308,7 @@ img {
 .about_bandinfo_textbox p {
   background-color: #2a4163;
   color: #ffffff;
-  font-size: 3.1vw;
+  font-size: 2.6vw;
   padding-right: 5%;
   padding-top: 5%;
   width: 84.6%;
@@ -1411,7 +1411,7 @@ header {
   .hamburger{
   font-size:30px;
   cursor:pointer;
-  color: #fff;
+  color: #f9e68b;
   display: block;
   padding-right: 65%
 }
@@ -1614,10 +1614,12 @@ img {
 
 .about_bandinfo_textbox {
     flex-direction: column;
+    background-color: transparent;
     align-items: center;
     width: 100%;
     margin: 0;
     padding-left: 8px;
+    height:auto;
 }
 
 .about_bandinfo_textbox p {
